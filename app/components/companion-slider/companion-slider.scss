@@ -1,0 +1,18 @@
+.companion__list {
+  border-block-start: 1px solid rgb(233 233 233);
+  border-block-end: 1px solid rgb(233 233 233);
+}
+
+.companion__item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  height: 98px;
+  border-inline-end: 1px solid rgb(233 233 233);
+
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    height: 140px;
+  }
+}

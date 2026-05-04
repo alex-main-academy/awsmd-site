@@ -1,0 +1,72 @@
+body {
+  font-family: var(--font-inter-tight);
+  line-height: 1;
+}
+
+.page-wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 100%;
+  padding-inline: 20px;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding-inline: 44px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--aws-button-min-height, 50px);
+  padding-inline: var(--aws-button-padding-inline, 20px);
+  font-family: var(--aws-button-font-family, var(--font-helvetica-neue));
+  font-size: 14px;
+  border: 1px solid var(--aws-color-gray-light);
+  border-radius: 10px;
+  transition:
+    background-color var(--aws-transition-time),
+    color var(--aws-transition-time);
+  cursor: pointer;
+
+  &--primary {
+    &:hover {
+      background-color: var(--aws-color-white);
+      color: var(--aws-color-black);
+    }
+  }
+
+  &--secondary {
+    line-height: 1.5;
+    background-color: var(--aws-color-white);
+
+    &:hover {
+      background-color: rgb(231, 231, 231);
+    }
+  }
+}
+
+.title {
+  font-size: var(--aws-main-title-font-size, 48px);
+  font-weight: 400;
+  line-height: 1.1;
+
+  &--decorative {
+    font-family: var(--font-instrument-serif);
+    font-size: var(--aws-decorative-title-font-size, 56px);
+  }
+}
+
+.title-description {
+  display: block;
+  width: max-content;
+  padding: 9px 22px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: rgb(110 110 110);
+  border: 1px solid rgb(206 206 206);
+  border-radius: 6px;
+}

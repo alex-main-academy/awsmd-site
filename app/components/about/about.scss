@@ -1,0 +1,227 @@
+.about {
+  margin-block-start: -75px;
+  margin-inline: 16px;
+  border-radius: 14px;
+  background-color: rgb(245 245 245);
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 582px 1fr;
+    align-items: center;
+    gap: 32px;
+    margin-block-start: -33px;
+    margin-inline: 100px;
+    padding: 16px 16px 22px;
+  }
+}
+
+.about__video {
+  height: 314px;
+  padding: 12px;
+  padding-block-end: 0;
+  box-sizing: content-box;
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    gap: 25px;
+    height: 552px;
+    padding: 0;
+  }
+}
+
+.about__video-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+.about__progress {
+  height: 4px;
+  border-radius: 1px;
+  background-color: rgb(202 202 202);
+}
+
+.about__progress-bar {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  background: var(--aws-color-black);
+
+  &::before {
+    position: absolute;
+    inset-block-end: -12px;
+    inset-inline-end: -4px;
+    height: 8px;
+    width: 8px;
+    background-image: url('/icons/video-mark.svg');
+    background-size: contain;
+    content: '';
+  }
+}
+
+.about__progress-state {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 16px;
+}
+
+.about__progress-title {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.about__progress-video {
+  font-size: 12px;
+  font-weight: 500;
+
+  &-all {
+    color: rgb(171 171 171);
+  }
+}
+
+.about__progress-segments {
+  display: grid;
+  grid-template-columns: repeat(var(--aws-about-videos-count), 1fr);
+  gap: 11px;
+}
+
+.about__progress-segments-item {
+  display: grid;
+  gap: 16px;
+}
+
+.about__progress-segment {
+  position: relative;
+  height: 2px;
+  background: rgb(202 202 202);
+  border-radius: 1px;
+}
+
+.about__progress-segment-title {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--aws-about-video-title-color);
+}
+
+.about__progress-segment-fill {
+  position: relative;
+  height: 100%;
+  width: 0%;
+  background: var(--aws-color-black);
+
+  &::before {
+    position: absolute;
+    inset-block-end: -12px;
+    inset-inline-end: -4px;
+    display: var(--aws-about-video-mark);
+    height: 8px;
+    width: 8px;
+    background-image: url('/icons/video-mark.svg');
+    background-size: contain;
+    content: '';
+  }
+}
+
+.about__progress-segment-fill.full {
+  width: 100%;
+}
+
+.about__progress-segment-fill.active {
+  width: 100%;
+  animation: fill linear;
+}
+
+@keyframes fill {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.about__content {
+  padding: 20px 20px 36px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
+}
+
+.about__title {
+  margin-block-end: 65px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: rgb(0 0 0 / 0.38);
+
+  &--black {
+    color: var(--aws-color-black);
+  }
+
+  &--decorative {
+    font-family: var(--font-instrument-serif);
+    font-size: 26px;
+    color: var(--aws-color-black);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 748px;
+    font-size: 44px;
+  }
+}
+
+.about__subtitle {
+  margin-block-end: 8px;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.about__description {
+  margin-block-end: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-block-end: 15px;
+  color: rgb(144 144 144 / 0.85);
+  border-block-end: 1px solid rgb(180 180 180 / 0.2);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 502px;
+  }
+}
+
+.about__type {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-block-end: 43px;
+}
+
+.about__label {
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgb(234 234 234);
+
+  @media screen and (min-width: 1200px) {
+    padding: 7px;
+    font-size: 10px;
+  }
+}

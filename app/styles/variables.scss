@@ -1,0 +1,14 @@
+:root {
+  // palette
+  --aws-color-white: rgb(255 255 255);
+  --aws-color-white-07: rgb(255 255 255 / 0.7);
+  --aws-color-black: rgb(0 0 0);
+  --aws-color-black-06: rgb(0 0 0 / 0.6);
+  --aws-color-gray-light: rgb(225 225 225);
+  --aws-header-link-color: rgb(30 30 30);
+
+  // others
+  --aws-transition-time: 250ms;
+}
+
+$breakpoint-desktop: 1200px;
