@@ -46,6 +46,17 @@ body {
       background-color: rgb(231, 231, 231);
     }
   }
+
+  &--dark {
+    color: var(--aws-color-white);
+    background-color: rgb(34 40 43);
+
+    &:hover {
+      color: var(--aws-color-white);
+      background-color: rgb(7, 7, 7);
+      ;
+    }
+  }
 }
 
 .title {
@@ -56,6 +67,11 @@ body {
   &--decorative {
     font-family: var(--font-instrument-serif);
     font-size: var(--aws-decorative-title-font-size, 56px);
+    font-style: italic;
+  }
+
+  &--gray {
+    color: rgb(202 202 202);
   }
 }
 
@@ -67,6 +83,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.01em;
   color: rgb(110 110 110);
-  border: 1px solid rgb(206 206 206);
+  border: 1px solid var(--aws-title-description-border-color, rgb(206 206 206));
   border-radius: 6px;
+  text-transform: uppercase;
 }

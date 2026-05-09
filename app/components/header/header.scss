@@ -2,7 +2,7 @@
   position: fixed;
   inset-block-start: 0;
   inset-inline: 0;
-  z-index: 1;
+  z-index: 2;
   padding-block: 16px;
   background-color: var(--aws-color-white);
 
@@ -75,7 +75,7 @@
     background-color: var(--aws-header-link-color);
     opacity: var(--aws-header-link-hover-opacity, 0);
     transition: opacity var(--aws-transition-time);
-    content: '';
+    content: "";
   }
 
   &:hover {

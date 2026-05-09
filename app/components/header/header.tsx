@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import './header.scss';
+import Image from "next/image";
+import "./header.scss";
 
 export default function Header() {
   return (
@@ -39,14 +39,14 @@ export default function Header() {
           </ul>
         </nav>
         <button className="header__button button button--secondary">
-          Become a client{' '}
+          Become a client{" "}
           <Image
             className="button__icon"
             src="/icons/arrow-right.svg"
             width="12"
             height="10"
             alt=""
-          />{' '}
+          />{" "}
         </button>
         <button className="header__burger">
           <Image src="/icons/burger-open.svg" width="44" height="44" alt="" />

@@ -56,9 +56,9 @@
     inset-inline-end: -4px;
     height: 8px;
     width: 8px;
-    background-image: url('/icons/video-mark.svg');
+    background-image: url("/icons/video-mark.svg");
     background-size: contain;
-    content: '';
+    content: "";
   }
 }
 
@@ -123,9 +123,9 @@
     display: var(--aws-about-video-mark);
     height: 8px;
     width: 8px;
-    background-image: url('/icons/video-mark.svg');
+    background-image: url("/icons/video-mark.svg");
     background-size: contain;
-    content: '';
+    content: "";
   }
 }
 
@@ -171,6 +171,7 @@
   &--decorative {
     font-family: var(--font-instrument-serif);
     font-size: 26px;
+    font-style: italic;
     color: var(--aws-color-black);
 
     @media screen and (min-width: 1200px) {

@@ -1,13 +1,15 @@
-import Image from 'next/image';
-import { experienceItems } from './experienceItems';
-import './experience.scss';
+import Image from "next/image";
+import { experienceItems } from "./experienceItems";
+import "./experience.scss";
 
 export default function Experience() {
   return (
     <section className="experience">
       <div className="container">
         <div>
-          <span className="title-description experience__uptitle">OUR PORTFOLIO</span>
+          <span className="title-description experience__uptitle">
+            OUR PORTFOLIO
+          </span>
           <p className="experience__description">
             Our user-centered design encourages productivity and boosts revenue.
           </p>
@@ -38,9 +40,20 @@ export default function Experience() {
                 <span className="experience__book-title">{item.bookTitle}</span>
                 <span className="experience__book-text">{item.bookText}</span>
               </div>
-              <Image src="/icons/arrow-right-white.svg" width="14" height="12" alt="" />
+              <Image
+                src="/icons/arrow-right-white.svg"
+                width="14"
+                height="12"
+                alt=""
+              />
             </div>
-            <Image className="experience__image" src={item.image} width="312" height="405" alt="" />
+            <Image
+              className="experience__image"
+              src={item.image}
+              width="312"
+              height="405"
+              alt=""
+            />
             <h3 className="experience__name">{item.title}</h3>
             <p className="experience__text">{item.text}</p>
             <div className="experience__labels">

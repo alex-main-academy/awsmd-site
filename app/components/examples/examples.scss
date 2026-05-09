@@ -1,0 +1,57 @@
+.examples {
+  --aws-example-card-width: 168px;
+  --aws-example-card-gap: 18px;
+
+  padding-block-end: 84px;
+  background-color: var(--aws-color-black);
+
+  @media screen and (min-width: 1200px) {
+    --aws-example-card-width: 293px;
+    --aws-example-card-gap: 38px;
+
+    padding-block-end: 237px;
+  }
+}
+
+.examples .container {
+  position: relative;
+  display: grid;
+  grid-template-columns:
+    calc((var(--aws-example-card-width) * 2) + var(--aws-example-card-gap))
+    var(--aws-example-card-width) calc(
+      (var(--aws-example-card-width) * 2) + var(--aws-example-card-gap)
+    );
+  justify-content: center;
+  gap: var(--aws-example-card-gap);
+  padding-inline: 0;
+  overflow: hidden;
+}
+
+.examples__list {
+  display: grid;
+  grid-template-columns: repeat(2, var(--aws-example-card-width));
+  gap: var(--aws-example-card-gap);
+}
+
+.examples__image {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+}
+
+.examples__hand {
+  position: relative;
+
+  &-image {
+    position: absolute;
+    inset-inline-start: 50%;
+    transform: translateX(-56%);
+    height: 380px;
+    width: auto;
+    max-width: none;
+
+    @media screen and (min-width: 1200px) {
+      height: 634px;
+    }
+  }
+}

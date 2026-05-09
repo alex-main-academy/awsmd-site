@@ -1,0 +1,38 @@
+export const solutionsItems = [
+  [
+    "Logistics",
+    "Entertainment",
+    "Personal Finance",
+    "Logistics",
+    "Entertainment",
+    "Personal Finance",
+  ],
+  [
+    "Blockchain",
+    "Crypto",
+    "SaaS",
+    "HealthTech",
+    "Blockchain",
+    "Crypto",
+    "SaaS",
+    "HealthTech",
+  ],
+  ["Food Delivery", "Dating", "Sports", "Food Delivery", "Dating", "Sports"],
+  [
+    "GreenTech",
+    "Ecology",
+    "Architecture",
+    "GreenTech",
+    "Ecology",
+    "Architecture",
+  ],
+  ["CRM", "EHR", "EdTech", "EHR", "CRM", "EHR", "EdTech"],
+  [
+    "Entertainment",
+    "Personal Finance",
+    "Crowdfunding",
+    "Entertainment",
+    "Personal Finance",
+    "Crowdfunding",
+  ],
+];
