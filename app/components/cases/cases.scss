@@ -101,7 +101,9 @@
   padding: 18px 18px 20px;
   border-radius: 12px;
   border: 1px solid rgb(224 224 224);
-  transition: background-color var(--aws-transition-time), border-color var(--aws-transition-time);
+  transition:
+    background-color var(--aws-transition-time),
+    border-color var(--aws-transition-time);
 
   @media screen and (min-width: 1200px) {
     max-width: 100%;

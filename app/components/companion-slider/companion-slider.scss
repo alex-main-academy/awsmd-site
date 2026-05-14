@@ -1,3 +1,11 @@
+.companion {
+  scroll-margin-top: 76px;
+
+  @media screen and (min-width: 1200px) {
+    scroll-margin-top: 54px;
+  }
+}
+
 .companion__list {
   border-block-start: 1px solid rgb(233 233 233);
   border-block-end: 1px solid rgb(233 233 233);

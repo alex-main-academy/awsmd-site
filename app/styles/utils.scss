@@ -1,6 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-inter-tight);
   line-height: 1;
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 .page-wrapper {
@@ -54,7 +62,6 @@ body {
     &:hover {
       color: var(--aws-color-white);
       background-color: rgb(7, 7, 7);
-      ;
     }
   }
 }

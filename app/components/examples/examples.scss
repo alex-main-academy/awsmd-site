@@ -17,10 +17,7 @@
   position: relative;
   display: grid;
   grid-template-columns:
-    calc((var(--aws-example-card-width) * 2) + var(--aws-example-card-gap))
-    var(--aws-example-card-width) calc(
-      (var(--aws-example-card-width) * 2) + var(--aws-example-card-gap)
-    );
+    calc((var(--aws-example-card-width) * 2) + var(--aws-example-card-gap)) var(--aws-example-card-width) calc((var(--aws-example-card-width) * 2) + var(--aws-example-card-gap));
   justify-content: center;
   gap: var(--aws-example-card-gap);
   padding-inline: 0;

@@ -74,7 +74,7 @@ export default function CompanionSlider() {
   ];
 
   return (
-    <section className="companion">
+    <section className="companion" id="services">
       <ul className="companion__list">
         <Marquee speed={25} gradient={false}>
           {logos.map((logo, i) => (

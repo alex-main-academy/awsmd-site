@@ -41,7 +41,7 @@ export default function Reviews() {
   ];
 
   return (
-    <section className="reviews">
+    <section className="reviews" id="reviews">
       <div className="container">
         <div>
           <h2 className="title reviews__title">

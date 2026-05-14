@@ -4,7 +4,7 @@ import "./experience.scss";
 
 export default function Experience() {
   return (
-    <section className="experience">
+    <section className="experience" id="cases">
       <div className="container">
         <div>
           <span className="title-description experience__uptitle">

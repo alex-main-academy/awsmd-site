@@ -1,7 +1,13 @@
+"use client";
 import Image from "next/image";
 import "./header.scss";
 
-export default function Header() {
+type Props = {
+  isMenuOpen: boolean;
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export default function Header({ isMenuOpen, setIsMenuOpen }: Props) {
   return (
     <header className="header">
       <div className="container">
@@ -12,27 +18,27 @@ export default function Header() {
         <nav className="header__navigation">
           <ul className="header__list">
             <li className="header__item">
-              <a href="" className="header__link">
+              <a href="#about" className="header__link">
                 About Us
               </a>
             </li>
             <li className="header__item">
-              <a href="" className="header__link">
+              <a href="#cases" className="header__link">
                 Cases
               </a>
             </li>
             <li className="header__item">
-              <a href="" className="header__link">
+              <a href="#services" className="header__link">
                 Services
               </a>
             </li>
             <li className="header__item">
-              <a href="" className="header__link">
+              <a href="#reviews" className="header__link">
                 Reviews
               </a>
             </li>
             <li className="header__item">
-              <a href="" className="header__link">
+              <a href="#hiring" className="header__link">
                 We’re Hiring
               </a>
             </li>
@@ -48,8 +54,18 @@ export default function Header() {
             alt=""
           />{" "}
         </button>
-        <button className="header__burger">
-          <Image src="/icons/burger-open.svg" width="44" height="44" alt="" />
+        <button
+          className="header__burger"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <Image
+            src={
+              isMenuOpen ? "/icons/burger-close.svg" : "/icons/burger-open.svg"
+            }
+            width="44"
+            height="44"
+            alt=""
+          />
         </button>
       </div>
     </header>

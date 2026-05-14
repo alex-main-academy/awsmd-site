@@ -121,7 +121,7 @@ export default function Features() {
   }, [activeIndex, stepItems.length]);
 
   return (
-    <section className="features">
+    <section className="features" id="hiring">
       <div className="container">
         <span className="title-description">Why Awsmd</span>
 

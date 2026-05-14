@@ -38,8 +38,9 @@ export default function Cases() {
           {casesItems.map((item, index) => (
             <li key={index} className="filter__item">
               <button
-                className={`filter__button ${activeIndex === index ? "filter__button--active" : ""
-                  }`}
+                className={`filter__button ${
+                  activeIndex === index ? "filter__button--active" : ""
+                }`}
                 onClick={() => setActiveIndex(index)}
               >
                 <span className="filter__name">{item.filter}</span> (

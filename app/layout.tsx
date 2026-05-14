@@ -14,6 +14,9 @@ import Features from "./components/features/features";
 import Services from "./components/services/services";
 import Cases from "./components/cases/cases";
 import Contact from "./components/contact/contact";
+import Footer from "./components/footer/footer";
+import Menu from "./components/menu/menu";
+import LayoutClient from "./components/layout-client/layout-client";
 
 import "./styles/index.scss";
 
@@ -68,7 +71,7 @@ export const metadata: Metadata = {
   description: "We Create Awesome design",
 };
 
-export default function RootLayout({ }: Readonly<{
+export default function RootLayout({}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -78,20 +81,22 @@ export default function RootLayout({ }: Readonly<{
     >
       <body>
         <div className="page-wrapper">
-          <Header />
-          <main>
-            <Hero />
-            <About />
-            <Experience />
-            <CompanionSlider />
-            <Reviews />
-            <Portfolio />
-            <Examples />
-            <Features />
-            <Services />
-            <Cases />
-            <Contact />
-          </main>
+          <LayoutClient>
+            <main>
+              <Hero />
+              <About />
+              <Experience />
+              <CompanionSlider />
+              <Reviews />
+              <Portfolio />
+              <Examples />
+              <Features />
+              <Services />
+              <Cases />
+              <Contact />
+            </main>
+            <Footer />
+          </LayoutClient>
         </div>
       </body>
     </html>

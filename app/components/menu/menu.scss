@@ -1,0 +1,124 @@
+.menu {
+  position: fixed;
+  inset-block-start: 76px;
+  inset-inline-start: 0;
+  z-index: 1;
+  width: 100vw;
+  height: calc(100vh - 76px);
+  background-color: rgb(245 245 245);
+  transform: translateX(100%);
+  transition: transform var(--aws-transition-time);
+
+  &::before {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    z-index: -1;
+    height: 143px;
+    background-image: url("/images/footer/menu-bg.webp");
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    content: "";
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.menu__inner {
+  height: 100%;
+  padding-block: 48px 60px;
+  padding-inline: 20px;
+  overflow: auto;
+}
+
+.menu__title {
+  margin-block-end: 40px;
+  padding-block-end: 14px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: rgb(110 110 110);
+  border-block-end: 1px solid rgb(215 215 215);
+}
+
+.menu__list {
+  display: grid;
+  gap: 34px;
+  margin-block-end: 133px;
+}
+
+.menu__link {
+  position: relative;
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  font-family: var(--font-instrument-serif);
+  font-style: italic;
+  font-size: 38px;
+  text-decoration: none;
+  color: var(--aws-color-black);
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-end: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-image: url("/icons/arrow-right-top.svg");
+    background-size: contain;
+    opacity: 0;
+    transition: opacity var(--aws-transition-time);
+    content: "";
+  }
+}
+
+.menu__numer {
+  font-family: var(--font-inter-tight);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  color: rgb(144 144 144);
+}
+
+.menu__subtitle {
+  display: block;
+  margin-block-end: 7px;
+  font-size: 18px;
+}
+
+.menu__description {
+  margin-block-end: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgb(131 148 144);
+}
+
+.menu__info-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  color: var(--aws-color-black);
+}
+
+.menu__social {
+  margin-block-start: 18px;
+  padding-block-start: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-block-start: 1px solid rgb(215 215 215);
+}
